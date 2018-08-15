@@ -1,3 +1,3 @@
 FROM scratch
-ADD clientapi /
-CMD ["#!/bin/bash /clientapi"]
+ADD client-api-pipeline /
+CMD ["/client-api-pipeline"]
