@@ -1,3 +1,3 @@
 FROM scratch
 ADD clientapi /
-CMD ["/clientapi"]
+CMD ["#!/bin/bash /clientapi"]
