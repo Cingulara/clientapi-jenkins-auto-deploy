@@ -1,0 +1,14 @@
+version : '3'
+ 
+services:
+  clientapi:
+    image: client-api-pipeline
+    ports:
+      - 9000:8080
+    depends_on:
+      - client-api-db-pipeline
+  
+  clientapidb:
+    image: client-api-db-pipeline
+    ports:
+      - 3306
