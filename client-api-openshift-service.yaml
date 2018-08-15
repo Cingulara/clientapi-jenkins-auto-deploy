@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    openshift.io/generated-by: OpenShiftWebConsole
+  creationTimestamp: '2018-08-15T10:51:01Z'
+  labels:
+    app: client-api-pipeline
+  name: client-api-pipeline
+  namespace: client-api-pipeline
+  resourceVersion: '580800'
+  selfLink: /api/v1/namespaces/client-api-pipeline/services/client-api-pipeline
+  uid: 19d2af08-a079-11e8-adbc-00155d011706
+spec:
+  ports:
+    - name: 8080-tcp
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    deploymentconfig: client-api-pipeline
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
