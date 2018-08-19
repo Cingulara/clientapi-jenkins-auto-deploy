@@ -4,11 +4,11 @@ services:
   clientapi:
     image: client-api-pipeline
     ports:
-      - 9000:8080
+      - 9001:8080
     depends_on:
       - client-api-db-pipeline
   
-  clientapidb:
+  client-api-db-pipeline:
     image: client-api-db-pipeline
     ports:
       - 3306
