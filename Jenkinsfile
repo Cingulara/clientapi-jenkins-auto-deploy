@@ -17,7 +17,7 @@ node {
             bat "set GOOS=linux"
             bat "c:\\go\\bin\\go get -u github.com/go-sql-driver/mysql"
             bat "c:\\go\\bin\\go get -u github.com/gorilla/mux"
-            bat "c:\\go\\bin\\go build -a -installsuffix cgo -o clientapi ."
+            bat "c:\\go\\bin\\go build -a -installsuffix cgo -o client-api-pipeline ."
         } catch(error){
             echo "The go compile failed with ${error}"
         }
