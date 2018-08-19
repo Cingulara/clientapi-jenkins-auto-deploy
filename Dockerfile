@@ -1,3 +1,3 @@
 FROM scratch
-ADD client-api-pipeline /
-CMD ["/client-api-pipeline"]
+ADD clientapipipeline /
+CMD ["/clientapipipeline"]
