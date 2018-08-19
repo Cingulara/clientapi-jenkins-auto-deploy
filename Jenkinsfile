@@ -13,11 +13,7 @@ node {
 
     stage("Compile Source"){
         try {
-            bat "set CGO_ENABLED=0"
-            bat "set GOOS=linux"
-            bat "c:\\go\\bin\\go get -u github.com/go-sql-driver/mysql"
-            bat "c:\\go\\bin\\go get -u github.com/gorilla/mux"
-            bat "c:\\go\\bin\\go build -a -installsuffix cgo -o clientapipipeline ."
+            bat "buildapp.cmd"
         } catch(error){
             echo "The go compile failed with ${error}"
         }
